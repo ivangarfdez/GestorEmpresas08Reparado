@@ -1,0 +1,25 @@
+admin:
+    resource: "@AdminBundle/Controller/"
+    type:     annotation
+    prefix:   /admin/
+
+usuarios:
+    resource: "@UsuariosBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+fct:
+    resource: "@fctBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+generador:
+    resource: "@fctBundle/Resources/config/routing.yml"
+    prefix:   /prueba
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+logout:
+    path: /usuarios/logout

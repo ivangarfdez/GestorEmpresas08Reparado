@@ -1,0 +1,39 @@
+generador_homepage:
+    path:     /
+    defaults: { _controller: fctBundle:Default:index }
+
+all_empresa:
+    path:     /empresa/all
+    defaults: { _controller: fctBundle:Empresa:all }
+
+nuevo_eventos:
+    path:     /empresa/nuevo
+    defaults: { _controller: fctBundle:Empresa:nuevo}
+
+nuevo_profesor:
+    path:     /profesor/nuevo
+    defaults: { _controller: fctBundle:Profesor:nuevo}
+
+all_alumno:
+    path:     /alumno/all
+    defaults: { _controller: fctBundle:Alumno:all }
+
+all_profesor:
+    path:     /profesor/all
+    defaults: { _controller: fctBundle:Profesor:all }
+
+json_empresa:
+    path: /empresa
+    defaults: {_controller: fctBundle:EmpresaJson:generarJSON}
+    methods: [GET]
+
+json_alumno:
+    path: /alumno
+    defaults: {_controller: fctBundle:EmpresaJson:generarJSON}
+    methods: [GET]
+
+json_profesor:
+    path: /profesor
+    defaults: {_controller: fctBundle:ProfesorJson:generarJSON}
+    methods: [GET]
+
